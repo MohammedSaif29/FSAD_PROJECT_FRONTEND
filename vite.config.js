@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: "/FSDA-PROJECT/",
+  base: "/FSAD_PROJECT_FRONTEND/",
   plugins: [react()],
   server: {
     proxy: {
@@ -27,7 +27,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: '../docs',
+    outDir: 'dist',
     emptyOutDir: true
   }
 })
