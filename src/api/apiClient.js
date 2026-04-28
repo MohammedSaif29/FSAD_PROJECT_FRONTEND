@@ -95,7 +95,7 @@ export const uploadResource = async (formData) => {
 };
 
 export const login = async ({ identifier, password }) => {
-  const res = await authApi.post('/login', { email: identifier, password });
+  const res = await authApi.post('/login', { identifier, password });
   return res.data;
 };
 
